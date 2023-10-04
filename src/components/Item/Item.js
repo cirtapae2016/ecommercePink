@@ -1,6 +1,3 @@
-// import "bulma/css/bulma.css";
-// import "./Item.css";
-
 import { Link } from "react-router-dom";
 
 function Item({ id, title, image, price, stock }) {

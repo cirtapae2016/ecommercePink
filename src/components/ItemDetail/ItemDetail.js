@@ -1,15 +1,14 @@
-// import "./ItemDetail.css"
-
 import ItemCount from "../ItemCount/ItemCount";
-function ItemDetail({ id, name, image, category, description, price, stock }) {
+
+function ItemDetail({ id, title, image, category, description, price, stock }) {
   return (
     <article className="card CardItem" style={{ maxWidth: 300 }}>
       <header className="card-header">
-        <p className="card-header-title is-centered ItemHeader">{name}</p>
+        <p className="card-header-title is-centered ItemHeader">{title}</p>
       </header>
       <div className="card-image">
         <figure className="image is-4by3">
-          <img src={image} alt={name} className="ItemImg" />
+          <img src={image} alt={title} className="ItemImg" />
         </figure>
       </div>
       <div className="card-content">
@@ -30,7 +29,7 @@ function ItemDetail({ id, name, image, category, description, price, stock }) {
             initial={1}
             stock={stock}
             onAdd={(quantity) => {
-              console.log("Cantidad agregada de items ", quantity);
+        
             }}
           />
         </footer>

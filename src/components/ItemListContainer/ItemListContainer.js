@@ -1,4 +1,4 @@
-// import "./ItemListContainer.css";
+//import "./ItemListContainer.css";
 
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -11,9 +11,6 @@ function ItemListContainer({ greeting }) {
 
   const { categoryId } = useParams();
 
-  console.log("La categoria que llego aca es:", categoryId);
-
-  //Con el useEffect hago el llamado a la API o en este caso el asyncMock:
   useEffect(() => {
     const asyncFunc = categoryId ? getProductsByCategory : getProductos;
 
@@ -24,8 +21,7 @@ function ItemListContainer({ greeting }) {
       .catch((error) => {
         console.error(error);
       });
-  }, [categoryId]); //El segundo parametro con un array vacio significa que solo se va a ejecutar cuando se renderize por primera vez
-  //Fin del useEffect
+  }, [categoryId]);
 
   return (
     <div className="container">
