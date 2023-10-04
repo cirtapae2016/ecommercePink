@@ -1,0 +1,16 @@
+.navbar.is-dark {
+    background-color: #333;  /* Color de fondo oscuro */
+}
+
+.navbar-item.is-active {
+    background-color: #555;  /* Cambia esto al color que quieras para los elementos activos */
+    color: #fff;  /* Color del texto para los elementos activos */
+}
+
+.navbar-item {
+    transition: all 0.3s ease;  /* Transición suave para los hover */
+}
+
+.navbar-item:hover {
+    background-color: #444;  /* Color de fondo para hover */
+}

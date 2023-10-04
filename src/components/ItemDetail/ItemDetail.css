@@ -1,0 +1,53 @@
+.CardItem {
+    background-color: #f4f4f4;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 70%;  /* Este es un valor arbitrario, ajústalo como necesites */
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  .Header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .ItemHeader {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .picture {
+    text-align: center;
+  }
+  
+  .ItemImg {
+    max-width: 300px;  /* Limita el ancho máximo */
+    max-height: 300px;  /* Limita la altura máxima */
+    width: auto;  /* Asegura que la imagen conserve su relación de aspecto */
+    height: auto;  /* Asegura que la imagen conserve su relación de aspecto */
+    margin: auto;  /* Centra la imagen en su contenedor */
+    display: block; /* Esto también ayuda a centrar la imagen */
+  }
+  
+  
+  
+  .Info {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .ItemFooter {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
