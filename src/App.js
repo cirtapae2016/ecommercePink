@@ -1,5 +1,4 @@
-import "bulma/css/bulma.css"; //Cuando importo una hoja de estilos, no hace falta guardarla en una variable.
-
+import "bulma/css/bulma.css"; 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import NavBar from "./components/NavBar/NavBar.js";
