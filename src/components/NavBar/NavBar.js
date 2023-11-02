@@ -14,7 +14,7 @@ function NavBar() {
         <img src={logoEcommerce} alt="Mi logo" width="100" />
       </Link>
       <div className="navbar-menu is-active">
-        <div class="navbar-start">
+        <div className="navbar-start">
           <NavLink
             to={`/category/hombre`}
             className={({ isActive }) =>
